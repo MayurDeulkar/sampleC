@@ -2,13 +2,13 @@
 int main()
 {
     int arr[10],beg,e,s,mid,end,count=0;
+    int flag=0,position;
     printf("Enter the length of array:");
     scanf("%d",&e);
     printf("Enter the Array Elements:\n");
     for(int i=0; i<=e-1; i++)
     {
         scanf("%d",&arr[i]);
-        
     }
     printf("Enter the Number to search:");
     scanf("%d",&s);
@@ -19,9 +19,10 @@ int main()
     {
         mid = (beg + end) / 2;
 
-        if (s == arr[mid]) 
+        if (arr[mid] == s) 
         {
-            count++;
+            flag=1;
+            position=mid;
         } 
         else if (arr[mid] < s) 
         {
@@ -30,17 +31,15 @@ int main()
        else if(arr[mid] > s)
         {
             end = mid - 1;
-        }
-       
-   }
+        }   
+    }
 
-   if(count < e-1 && count!=0)
+   if(flag == 1 )
    {
-    printf("\n%d found at position %d", s, mid);
+    printf("\n %d found at position %d",s,position);
    }
    else
    {
-       printf("\n%d Not present in array",s);
+    printf("\n Not present in array");
    }
-   return 0;
 }

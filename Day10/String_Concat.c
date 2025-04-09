@@ -7,7 +7,7 @@ int main()
     scanf("%s",&name);
     printf("Enter the String2:");
     scanf("%s",&name2);
-    printf("\n You Entered the string is: %s",name);
+   
     printf("\n You Entered the string concat is: %s",strcat(name,name2));
 
 }
