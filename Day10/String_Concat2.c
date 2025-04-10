@@ -12,10 +12,16 @@ int main()
     l=strlen(name);
     l1=strlen(name2);
     l2=l+l1;
+     printf("Concat String is:");
     for(int i=l; i<=l2; i++)
     {
         name[i]=name2[s];
         s++;
     }
-    printf("Concat String is: %s ",name);
+
+    for(int i=0; i<=l2; i++)
+    {
+        printf("%c",name[i]);
+    }
+    
 } 

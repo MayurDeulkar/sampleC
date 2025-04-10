@@ -9,5 +9,4 @@ int main()
     scanf("%s",&name2);
    
     printf("\n You Entered the string compare is: %d",strcmp(name,name2));
-
 }
