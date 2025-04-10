@@ -22,12 +22,12 @@ int main()
         count2 += name2[i];
     }
     printf("\n%d",count2);
-    
-   if(count < count2)
+
+   if(count > count2)
      {
         printf("\n1 ");
      }
-     else if(count > count2)
+     else if(count < count2)
      {
          printf("\n-1 ");
      }
