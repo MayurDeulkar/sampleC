@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-#define SIZE 100 // Maximum string size
-#define CHARS 255 // Maximum characters allowed
+#define CHARS 255 
 
-int main() {
-  char string[SIZE];
+int main() 
+{
+  char string[50];
   int frequency[CHARS];
   int i = 0, maximum;
   int value;
@@ -14,10 +14,10 @@ int main() {
   
   for (i = 0; i < CHARS; i++) 
   {
-    frequency[i] = 0; // initialize freq of all characters to zero
+    frequency[i] = 0; 
   }
   
-  /* Finds frequency of each characters */
+  //Finds frequency of each characters
   i = 0;
   while (string[i] != '\0') 
   {
@@ -26,14 +26,15 @@ int main() {
     i++;
   }
   
-  /* Finds maximum frequency */
+  //Finds maximum frequency 
   maximum = 0;
-  for (i = 0; i < CHARS; i++) {
+  for (i = 0; i < CHARS; i++) 
+  {
     if (frequency[i] > frequency[maximum])
+    {
       maximum = i;
+    }
   }
   
-  printf("Maximum occurrence character is '%c' = %d times.", maximum,
-    frequency[maximum]);
-  return 0;
+  printf("Maximum occurrence character is '%c' = %d times.", maximum, frequency[maximum]);
 }
