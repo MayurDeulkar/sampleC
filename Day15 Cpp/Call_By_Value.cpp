@@ -5,8 +5,6 @@ void fun(int x,int y)
 {
     x=12;
     y=13;
-    cout<<x<<endl;
-    cout<<y<<endl;
 }
 int main()
 {
@@ -15,4 +13,6 @@ int main()
     cout<<a<<endl;
     cout<<b<<endl;
     fun(a,b);
+    cout<<a<<endl;
+    cout<<b<<endl;
 }
