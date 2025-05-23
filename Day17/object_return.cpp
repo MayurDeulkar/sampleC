@@ -11,6 +11,7 @@ class one
         b=y;
     }
 
+    //main return function of object
     one add(one obj2)
     {
         one temp;
@@ -30,6 +31,6 @@ int main()
     obj1.setdata(4,7);
     obj2.setdata(5,6);
 
-    obj3= obj1.add(obj2);
+    obj3 = obj1.add(obj2);
     obj3.getdata();
 }
